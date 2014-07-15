@@ -1,4 +1,4 @@
-DanyLibs
+﻿DanyLibs
 ======
 This is my collection of libraries, helpers and utilities used in my Minecraft mods (add-ons).
 
