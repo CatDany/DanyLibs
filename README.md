@@ -1,4 +1,4 @@
-DanyLibs
+﻿DanyLibs
 ======
 This is my collection of libraries, helpers and utilities used in my Minecraft mods (add-ons).
 
@@ -12,6 +12,7 @@ I also grabbed some code from another open-source projects.
 *You can see all the original authors in the comment of a class!*
 
 Here's some capsy letters that noone wants to read (aka MIT License)
+
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
