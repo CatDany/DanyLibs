@@ -1,11 +1,9 @@
-package danylibs.libs;
+package danylibs;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.command.server.CommandBlockLogic;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
-import oceany.command.ModCommandBase.CommandPermissionLevel;
 
 public class PermissionHelper
 {
@@ -47,5 +45,25 @@ public class PermissionHelper
 			return CommandPermissionLevel.CONSOLE;
 		}
 		return CommandPermissionLevel.USER;
+	}
+	
+	static enum CommandPermissionLevel
+	{
+		USER(0),
+		COMMAND_BLOCK(2),
+		OPERATOR(3),
+		CONSOLE(4);
+		
+		private final int permLevel;
+		
+		private CommandPermissionLevel(int permissionLevel)
+		{
+			this.permLevel = permissionLevel;
+		}
+		
+		public int value()
+		{
+			return permLevel;
+		}
 	}
 }

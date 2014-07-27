@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

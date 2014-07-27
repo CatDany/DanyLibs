@@ -1,6 +1,6 @@
-package danylibs.libs;
+package danylibs;
 
-import oceany.Refs;
+import luckycoins.Refs;
 import net.minecraft.entity.Entity;
 import net.minecraft.world.World;
 
@@ -22,12 +22,12 @@ public class SoundHelper
 	
 	public static void playModSoundBlock(World world, int x, int y, int z, String sound, float volume)
 	{
-		playSoundBlock(world, x, y, z, Refs.RESOURCE_LOCATION + ":" + sound, volume);
+		playSoundBlock(world, x, y, z, Refs.RESLOC + ":" + sound, volume);
 	}
 	
 	public static void playModSoundEntity(Entity entity, String sound, float volume)
 	{
-		playSoundEntity(entity, Refs.RESOURCE_LOCATION + ":" + sound, volume);
+		playSoundEntity(entity, Refs.RESLOC + ":" + sound, volume);
 	}
 	
 	public static void setPitch(float p)

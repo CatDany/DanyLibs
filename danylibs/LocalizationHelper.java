@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import net.minecraft.util.StatCollector;
 

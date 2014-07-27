@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Random;
 
+import luckycoins.Refs;
 import cpw.mods.fml.common.FMLLog;
 
 public class InternetHelper
@@ -16,7 +17,7 @@ public class InternetHelper
 	public static String readRemoteFile(String url, Object... format)
 	{
 		String result = null;
-		String tmpFileName = "%TMP%\\" + new Random().nextInt();
+		String tmpFileName = Refs.MOD_ID + "_tmp_" + new Random().nextInt();
 		deleteIfExists(tmpFileName);
 		try
 		{
@@ -28,10 +29,7 @@ public class InternetHelper
 			FMLLog.warning("Unable to read remotely downloaded file!");
 			t.printStackTrace();
 		}
-		finally
-		{
-			deleteIfExists(tmpFileName);
-		}
+		deleteIfExists(tmpFileName);
 		return result;
 	}
 	
@@ -40,6 +38,7 @@ public class InternetHelper
 		deleteIfExists(saveTo);
 		try
 		{
+			new File(saveTo).createNewFile();
 			URL website = new URL(String.format(url, format));
 			ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 			FileOutputStream fos = new FileOutputStream(saveTo);

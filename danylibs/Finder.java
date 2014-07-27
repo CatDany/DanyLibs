@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import java.util.ArrayList;
 import java.util.List;

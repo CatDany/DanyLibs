@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -7,8 +7,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.common.gameevent.TickEvent.Phase;
-import danylibs.libs.EventBusHelper.EventBusType;
-import danylibs.libs.TickHandler.ITickData;
+import danylibs.EventBusHelper.EventBusType;
 
 public abstract class TickHandler
 {

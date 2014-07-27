@@ -1,10 +1,9 @@
-package danylibs.libs;
+package danylibs;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.MathHelper;
 import net.minecraftforge.common.util.ForgeDirection;
-import oceany.Oceany;
+import cpw.mods.fml.common.FMLLog;
 
 public class RotationUtils
 {
@@ -91,7 +90,7 @@ public class RotationUtils
 		case UNKNOWN:
 			return -1;
 		}
-		Oceany.logger.warn("Future/Unsupported ForgeDirection detected! Stacktrace is below:");
+		FMLLog.warning("Future/Unsupported ForgeDirection detected! Stacktrace is below:");
 		new FutureUnsupportedDirectionException().printStackTrace();
 		return -1;
 	}

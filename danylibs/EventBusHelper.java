@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import java.lang.reflect.Method;
 
@@ -23,10 +23,6 @@ public class EventBusHelper
 			register(eventHandler, EventBusType.FORGE);
 			register(eventHandler, EventBusType.FML);
 			break;
-		}
-		if (type == null)
-		{
-			FMLLog.warning("EventHandler ", eventHandler.getClass().getName() + " cannot be registered because it doesn't contain any Forge or FML events.");
 		}
 	}
 	

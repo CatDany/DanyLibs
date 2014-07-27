@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;

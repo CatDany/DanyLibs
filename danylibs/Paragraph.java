@@ -1,4 +1,4 @@
-package danylibs.libs;
+package danylibs;
 
 public class Paragraph
 {
