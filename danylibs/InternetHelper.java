@@ -1,7 +1,9 @@
 package danylibs;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.net.URI;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
@@ -48,6 +50,20 @@ public class InternetHelper
 		catch (Throwable t)
 		{
 			FMLLog.warning("Unable to download remote file!");
+			t.printStackTrace();
+		}
+	}
+	
+	public static void openWebpage(String url)
+	{
+		try
+		{
+			Desktop.getDesktop().browse(new URI(url));
+		}
+		catch (Throwable t)
+		{
+			FMLLog.warning("Webpage cannot be opened");
+			FMLLog.warning("Additional Data: {\"url\":\"" + url + "\"}");
 			t.printStackTrace();
 		}
 	}
