@@ -1,7 +1,7 @@
 package danylibs;
 
-import luckycoins.Refs;
 import net.minecraft.util.StatCollector;
+import shotyourscreen.Refs;
 
 public class LocalizationHelper
 {

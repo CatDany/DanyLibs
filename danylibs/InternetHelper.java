@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Random;
 
-import luckycoins.Refs;
+import shotyourscreen.Refs;
 import cpw.mods.fml.common.FMLLog;
 
 public class InternetHelper

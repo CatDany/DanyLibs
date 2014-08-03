@@ -1,8 +1,8 @@
 package danylibs;
 
-import luckycoins.Refs;
 import net.minecraft.entity.Entity;
 import net.minecraft.world.World;
+import shotyourscreen.Refs;
 
 public class SoundHelper
 {
